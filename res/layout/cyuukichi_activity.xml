@@ -20,8 +20,21 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="67dp"
         android:text="中吉でした。"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txvMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:text="さんの今日の運勢は・・・"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+
+        <requestFocus />
+    </TextView>
 
 </RelativeLayout>

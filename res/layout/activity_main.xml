@@ -8,28 +8,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-	<EditText
-	    android:id="@+id/edtName"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentLeft="true"
-	    android:layout_below="@+id/imageView1"
-	    android:layout_marginLeft="44dp"
-	    android:layout_marginTop="21dp"
-	    android:ems="10" >
-
-	    <requestFocus />
-	</EditText>
-
-	<ImageView
-	    android:id="@+id/imageView1"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignRight="@+id/edtName"
-	    android:layout_below="@+id/textView1"
-	    android:scaleType="fitXY"
-	    android:src="@drawable/ikuzo" />
-
 	<Button
 	    android:id="@+id/btnOK"
 	    android:layout_width="wrap_content"
@@ -40,15 +18,45 @@
 	    android:text="OK"
 	    android:textSize="40sp" />
 
+
+	<EditText
+	    android:id="@+id/edtName"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/imageView1"
+	    android:layout_marginRight="51dp"
+	    android:layout_marginTop="27dp"
+	    android:ems="10" />
+
+	<ImageView
+	    android:id="@+id/imageView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/btnOK"
+	    android:layout_below="@+id/textView1"
+	    android:layout_marginRight="11dp"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/ikuzo" />
+
 	<TextView
 	    android:id="@+id/textView1"
 	    android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
 	    android:layout_alignParentTop="true"
 	    android:layout_centerHorizontal="true"
-	    android:layout_marginTop="47dp"
+	    android:layout_marginTop="46dp"
 	    android:text="おみくじ"
 	    android:textAppearance="?android:attr/textAppearanceLarge"
 	    android:textSize="30dp" />
+
+	<TextView
+	    android:id="@+id/textView2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/edtName"
+	    android:layout_alignBottom="@+id/edtName"
+	    android:layout_toLeftOf="@+id/edtName"
+	    android:text="名前" />
 
 </RelativeLayout>
